@@ -453,7 +453,7 @@ a, a:hover {
                 <img class="postcard_curso__img" src="<?php echo $curso['img'] ?>" alt="Image Title" />
             </a>
             <div class="postcard_curso__text">
-                <h1 class="postcard_curso__title blue"><a href="curso.php?id=<?php echo $curso['id_creador'] ?>"><?php echo $curso['nombre'] ?></a></h1>
+                <h1 class="postcard_curso__title blue"><a href="curso.php?id=<?php echo $curso['_id'] ?>"><?php echo $curso['nombre'] ?></a></h1>
                 <div class="postcard_curso__subtitle small">
                     <time datetime="2020-05-25 12:00:00">
                         <i class="fas fa-calendar-alt mr-2"></i>Curso por <?php echo $educador['data']['nombre'] ?>
@@ -466,7 +466,7 @@ a, a:hover {
                     <li class="tag__item"><i class="fas fa-tag mr-2"></i><?php echo $educador['data']['nombre'] ?></li>
                     <li class="tag__item"><i class="fas fa-clock mr-2"></i><?php echo count($videos['video']) ?> Videos</li>
                     <li class="tag__item play blue">
-                        <a href="curso.php?id=<?php echo $curso['id_creador'] ?>"><i class="fas fa-play mr-2"></i>Ver Curso</a>
+                        <a href="curso.php?id=<?php echo $curso['_id'] ?>"><i class="fas fa-play mr-2"></i>Ver Curso</a>
                     </li>
                 </ul>
             </div>
