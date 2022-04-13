@@ -80,7 +80,7 @@
     
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
+    <link rel="stylesheet" type="text/css" href="dashboard/css/inicio.css">
     <!--<title>Dashboard Sidebar Menu</title>--> 
 </head>
 <body>
@@ -341,7 +341,7 @@
                         <a href="#" class="card-button"> Ver curso</a>
                     </div>
                 </div>
-                <?php endforeach?>
+        <?php endforeach?>
         </div>  
 
 
