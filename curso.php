@@ -308,7 +308,7 @@
 
         <?php foreach ($videos['video'] as $par):?>
             <div class="col-md-3">
-                <div class="card-sl">
+                <div class="card-sl mb-5">
                     <div class="card-image">
                         <a data-bs-toggle="modal" data-bs-target="#video-<?php echo $par['_id']; ?>" >
                             <img src="<?php echo $par['img']?>" />
@@ -322,7 +322,7 @@
                     </div>
                     <div class="card-text">
                     </div>
-                    <a class="btn card-button"  data-bs-toggle="modal" data-bs-target="#video-<?php echo $par['_id']; ?>" > Ver video</a>
+                    <a class="btn card-button" href="video.php?id_curso=<?php echo $_GET['id']?>&id_video=<?php echo $par['_id']; ?>" > Ver video</a>
                 </div>
             </div>
         <?php endforeach?>

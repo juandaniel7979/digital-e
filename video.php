@@ -7,11 +7,12 @@
       exit;
     }
 
-    if (!(isset($_GET['id']))) {
+    if (!(isset($_GET['id_curso'])) || !(isset($_GET['id_video']))) {
         header('Location: '.$app_dashboard.'dashboard.php');
         exit;
       }else{
-          $_id = $_GET['id'];
+          $id_curso = $_GET['id_curso'];
+          $id_video = $_GET['id_video'];
       }
 
 
@@ -19,29 +20,17 @@
     $result = toServer($url,"GET",'',$_SESSION['token']);
     // print_r($result);
 
-    $url = $api_url."api/pay/calDias";
-    $days = toServer($url,"GET",'',$_SESSION['token']);
-
-    if ($days['activa']==0) {
-      header('Location: '.$app_dashboard.'checkout.php');
-      exit;
-    }
     
-    $url = $api_url."api/canal/cursos";
-    $data = array("id" => $_GET['id']);
-    $curso = toServer($url,"GET",$data,$_SESSION['token']);
-    if($curso['error']==1){
-      header('Location: '.$app_dashboard.'index.php');
-      exit;
-    }else{
-      $curso = $curso['curso'][0];
-    }
-
-
     $url = $api_url."api/canal/videos";
-    $data = array("id_curso" => $_GET['id']);
+    $data = array("id_curso" => $_GET['id_curso']);
     $videos = toServer($url,"GET",$data,$_SESSION['token']);
 
+
+    $url = $api_url."api/canal/video";
+    $data2 = array("id" => $_GET['id_video']);
+    $video = toServer($url,"GET",$data2,$_SESSION['token']);
+    //   echo print_r($video);
+    //   echo '<script>alert('.print_r($video).'); </script>'
     
 ?>
 
@@ -66,40 +55,6 @@
 <body>
     <?php $active = 1 ?>
     <?php include_once './componentes/nav.php'; ?>
-
-    <?php foreach ($videos['video'] as $key):?>
-        <div class="modal fade" id="video-<?php echo $key['_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div style="width: 80% !important;" class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 style="font-weight: bold;color:black !important;"  class="modal-title text-dark" id="exampleModalLabel"><?php echo $key['titulo']; ?></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-dark">
-                <video style="width:100%; height: 100%;" controls>
-                    <source src="<?php echo $key['video_url']; ?>" type="video/mp4">
-                    Tu navegador no soporta los vídeos de HTML5
-                </video>
-
-                </div>
-                <div style="justify-content: flex !important;" class="modal-footer">
-                    <div class="row">
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Antes</button>
-                    </div>
-                    <div class="col-md-6">
-                        <button type="button" name="next" type="submit" class="btn btn-info">Despues</button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-
-        <?php endforeach ?>
-
 
     <section class="home">
         <div class="text">inicio</div>
@@ -305,27 +260,11 @@
 
   <div class="container" >
         <div class="row">
-
-        <?php foreach ($videos['video'] as $par):?>
-            <div class="col-md-3">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <a data-bs-toggle="modal" data-bs-target="#video-<?php echo $par['_id']; ?>" >
-                            <img src="<?php echo $par['img']?>" />
-                        </a>
-                    </div>
-                    <div class="card-heading">
-                    <?php echo $par['titulo']?>
-                    </div>
-                    <div class="card-text">
-                        <?php echo $par['descripcion']?>
-                    </div>
-                    <div class="card-text">
-                    </div>
-                    <a class="btn card-button"  data-bs-toggle="modal" data-bs-target="#video-<?php echo $par['_id']; ?>" > Ver video</a>
-                </div>
+            <h1>Hola que hace</h1>
+            <div class="wrapper-video">
+                <!-- <video src="<?php echo $video['video_url']?>"></video> -->
+                <video src="https://www.youtube.com/watch?v=VpLXxFhy7s4"></video>
             </div>
-        <?php endforeach?>
         </div>  
 
 
