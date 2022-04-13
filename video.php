@@ -53,7 +53,7 @@
     <!--<title>Dashboard Sidebar Menu</title>--> 
 </head>
 <body>
-    <?php $active = 1 ?>
+    <?php $active = 2 ?>
     <?php include_once './componentes/nav.php'; ?>
 
     <section class="home">

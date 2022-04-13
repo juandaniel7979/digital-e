@@ -64,7 +64,7 @@
     <!--<title>Dashboard Sidebar Menu</title>--> 
 </head>
 <body>
-    <?php $active = 1 ?>
+    <?php $active = 2?>
     <?php include_once './componentes/nav.php'; ?>
 
     <?php foreach ($videos['video'] as $key):?>
@@ -106,7 +106,6 @@
 
             <br><br>
 
-            <center><h3 class="text">Cursos recientes</h3></center>
 
         <style type="text/css">
                 a {
