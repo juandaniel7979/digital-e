@@ -60,7 +60,7 @@
         <div class="text">inicio</div>
 
         <style type="text/css">
-            iframe{
+            #video{
                 margin-left: 2%;
                 height: 70vh;
                 width: calc(100vw - (100vw/3));
@@ -260,7 +260,9 @@
 
         <div class="row">
             <div class="col">
-            <iframe  src="https://www.youtube.com/embed/DYDQUaw2f6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <iframe  src="https://www.youtube.com/embed/DYDQUaw2f6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video id="video" src="<?php echo $video['video_url']?>"></video>
+           
             </div>
             <div class="col col-lg-3 bg-light">
                 <ul class="nav nav-pills flex-column mb-auto">
@@ -286,7 +288,6 @@
         </div>
 
 
-                <!-- <video src="<?php echo $video['video_url']?>"></video> -->
                 <!-- <video src="https://youtu.be/DYDQUaw2f6c"></video> -->
 
     </section>
