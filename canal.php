@@ -17,6 +17,11 @@
     $data = array("id" => $_GET['id'], "limit" => 50);
     $result2 = toServer($url,"GET",$data,$_SESSION['token']);
 
+
+    if($result['error']==1){
+        header('Location: '.$app_dashboard.'dashboard.php');
+      exit;
+    }
     
     // // $url2 = $api_url."api/canal/ultimos";
     // $url2 = $api_url."api/canal/curso";
@@ -91,7 +96,6 @@
         <div class="text">Canal</div>
 
             <br><br>
-
             <center><h3 class="text"><?php echo ($result['data']['nombre'])?></h3></center>
 
     <style type="text/css">
@@ -321,12 +325,7 @@
             </div>
             <div class="bg-light p-4 d-flex justify-content-end text-center">
                 <ul class="list-inline mb-0">
-                    <!-- <li class="list-inline-item">
-                        <h5 class="font-weight-bold mb-0 d-block">215</h5><small class="text-muted"> <i class="fas fa-image mr-1"></i>Photos</small>
-                    </li>
-                    <li class="list-inline-item">
-                        <h5 class="font-weight-bold mb-0 d-block">745</h5><small class="text-muted"> <i class="fas fa-user mr-1"></i>Followers</small>
-                    </li> -->
+                    
                     <li class="list-inline-item">
                         <h5 class="font-weight-bold mb-0 d-block"><?php echo count($result2['curso']) ?></h5><small class="text-muted"> <i class="fas fa-user mr-1"></i>Cursos</small>
                     </li>
@@ -335,7 +334,7 @@
             <div class="px-4 py-3">
                 <h5 class="mb-0">Descripcion</h5>
                 <div class="p-4 rounded shadow-sm bg-light">
-                   <?php echo $result["data"]["descripcion"];?>
+                   <center><?php echo $result["data"]["descripcion"];?></center>
                 </div>
             </div>
 
@@ -380,10 +379,11 @@
                             </div>
                         </div>
                     <?php endforeach?>
-                    <!-- <div class="col-lg-6 mb-2 pr-lg-1"><img src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 mb-2 pl-lg-1"><img src="https://images.unsplash.com/photo-1493571716545-b559a19edd14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 pr-lg-1 mb-2"><img src="https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 pl-lg-1"><img src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div> -->
+
+                    <?php if (count($result2['curso'])==0): ?>
+                        <center><h6><?php echo $result["data"]["nombre"];?> no tiene cursos publicados</h6></center>
+                    <?php endif ?>
+                    
                 </div>
             </div>
         </div>
