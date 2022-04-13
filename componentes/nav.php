@@ -47,14 +47,14 @@
                 </li>
 
                 <li class="<?php if($active==5){echo "mode";} ?>">
-                    <a href="#">
+                    <a href="dashboard/legal/TERMINOSYCONDICIONES.pdf">
                         <i class='bx bx-shield-quarter icon' ></i>
                         <span class="text nav-text">Términos y <br>condiciones </span>
                     </a>
                 </li>
 
                 <li class="<?php if($active==6){echo "mode";} ?>">
-                    <a href="#">
+                    <a href="dashboard/legal/HABEASDATA.pdf">
                         <i class='bx bx-task icon' ></i>
                         <span class="text nav-text">Habeas data</span>
                     </a>
