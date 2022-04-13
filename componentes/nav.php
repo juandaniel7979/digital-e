@@ -26,7 +26,7 @@
                 </li>
                 
                 <li class="<?php if($active==2){echo "mode";} ?>">
-                    <a href="admin.php">
+                    <a href="cursos.php">
                         <i class='bx bx-tv icon' ></i>
                         <span class="text nav-text">Cursos</span>
                     </a>
