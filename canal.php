@@ -7,70 +7,62 @@
       exit;
     }
 
-    $_id = $_GET['id'];
 
-
-    $url = $api_url."api/profile/user";
-    $result = toServer($url,"GET",'',$_SESSION['token']);
-    
-    // $url = $api_url."api/profile/user";
-    // $data = array("id" => $_id);
-    // $result = toServer($url,"POST",$data,$_SESSION['token']);
+    $url = $api_url."api/canal/user";
+    $data = array("id" => $_GET['id']);
+    $result = toServer($url,"POST",$data,$_SESSION['token']);
     
 
-    $url = $api_url."api/pay/calDias";
-    $days = toServer($url,"GET",'',$_SESSION['token']);
-
-    if ($days['activa']==0) {
-      header('Location: '.$app_dashboard.'checkout.php');
-      exit;
-    }
+    $url = $api_url."api/canal/curso";
+    $data = array("id" => $_GET['id'], "limit" => 50);
+    $result2 = toServer($url,"GET",$data,$_SESSION['token']);
 
     
-    // $url2 = $api_url."api/canal/ultimos";
-    $url2 = $api_url."api/canal/curso";
-    $data2 = array("id" => $_id);
-    $result2 = toServer($url2,"GET",$data2, $_SESSION['token']);
-    //print_r($result2);
+    // // $url2 = $api_url."api/canal/ultimos";
+    // $url2 = $api_url."api/canal/curso";
+    // $data2 = array("id" => $_id);
+    // $result2 = toServer($url2,"POST",$data2, $_SESSION['token']);
+    // print_r($result2);
 
-    $url = $api_url."api/canal/stream";
-    //$data = array("correo" => $email, "password" => $pass);
-    $streaming = toServer($url,"GET","",$_SESSION['token']);
+    // $url = $api_url."api/canal/stream";
+    // //$data = array("correo" => $email, "password" => $pass);
+    // $streaming = toServer($url,"GET","",$_SESSION['token']);
 
-    $url = $api_url."api/canal/streamers";
-    //$data = array("correo" => $email, "password" => $pass);
-    $streamers = toServer($url,"GET","",$_SESSION['token']);
+    // $url = $api_url."api/canal/streamers";
+    // //$data = array("correo" => $email, "password" => $pass);
+    // $streamers = toServer($url,"GET","",$_SESSION['token']);
 
 
-    $url = $api_url."api/canal/ultimosCreadores";
-    //$data = array("correo" => $email, "password" => $pass);
-    $creadores = toServer($url,"GET","",$_SESSION['token']);
+    // $url = $api_url."api/canal/ultimosCreadores";
+    // //$data = array("correo" => $email, "password" => $pass);
+    // $creadores = toServer($url,"GET","",$_SESSION['token']);
 
     
     
     
-    if(isset($_POST['create_curso'])){
-      $target_dir = "./imgCursos/";
-      $extencion = explode(".", $_FILES["preview-image"]["name"]);
-      $newnamefile = md5($_FILES["preview-image"]["name"]).rand(1000, 9999999);
+    // if(isset($_POST['create_curso'])){
+    //   $target_dir = "./imgCursos/";
+    //   $extencion = explode(".", $_FILES["preview-image"]["name"]);
+    //   $newnamefile = md5($_FILES["preview-image"]["name"]).rand(1000, 9999999);
 
-      $target_file = $target_dir . $newnamefile.".".$extencion[1];
-      echo "<script> console.log('".$target_file."')</script>";
-      $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-      if (move_uploaded_file($_FILES["preview-image"]["tmp_name"], $target_file)) {
-        echo '<script>alert("¡Curso añadido con exito!");</script>';
-              $nombre = $_POST['nombre'];
-              $descripcion = $_POST['descripcion'];
-              // $url_img = $_POST['imagen'];
-              $url_img = $target_file;
-              $url3 = $api_url."api/canal/cursos";
-              $data = array("nombre" => $nombre,"img" => $url_img,"descripcion" => $descripcion);
-              $result3 = toServer($url3,"POST",$data,$_SESSION['token']);
-        header('Location: index.php');
-        exit;
+    //   $target_file = $target_dir . $newnamefile.".".$extencion[1];
+    //   echo "<script> console.log('".$target_file."')</script>";
+    //   $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    //   if (move_uploaded_file($_FILES["preview-image"]["tmp_name"], $target_file)) {
+    //     echo '<script>alert("¡Curso añadido con exito!");</script>';
+    //           $nombre = $_POST['nombre'];
+    //           $descripcion = $_POST['descripcion'];
+    //           // $url_img = $_POST['imagen'];
+    //           $url_img = $target_file;
+    //           $url3 = $api_url."api/canal/cursos";
+    //           $data = array("nombre" => $nombre,"img" => $url_img,"descripcion" => $descripcion);
+    //           $result3 = toServer($url3,"POST",$data,$_SESSION['token']);
+    //     header('Location: index.php');
+    //     exit;
 
-      }
-    }
+    //   }
+    // }
+
 ?>
 
 <!DOCTYPE html>
@@ -100,7 +92,7 @@
 
             <br><br>
 
-            <center><h3 class="text">CANAL: <?php echo $result["data"]["nombre"];?></h3></center>
+            <center><h3 class="text"><?php echo ($result['data']['nombre'])?></h3></center>
 
     <style type="text/css">
         .profile-head {
@@ -108,7 +100,7 @@
         }
 
         .cover {
-            background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+            background-image: url(<?php echo $result['data']['banner'] ?>);
             background-size: cover;
             background-repeat: no-repeat
         }
@@ -322,7 +314,7 @@
                     <!-- <a href="#" class="btn btn-outline-dark btn-sm btn-block">Edit profile</a> -->
                 </div>
                     <div class="media-body mb-5 text-white">
-                        <h4 class="mt-0 mb-0"><?php echo $result["data"]["nombre"];?></h4>
+                        <h4 class="mt-0 mb-0"><?php echo $result["data"]["nombre"];?></h4><br><br>
                         <!-- <p class="small mb-4"> <i class="fas fa-map-marker-alt mr-2"></i>New York</p> -->
                     </div>
                 </div>
@@ -336,7 +328,7 @@
                         <h5 class="font-weight-bold mb-0 d-block">745</h5><small class="text-muted"> <i class="fas fa-user mr-1"></i>Followers</small>
                     </li> -->
                     <li class="list-inline-item">
-                        <h5 class="font-weight-bold mb-0 d-block">340</h5><small class="text-muted"> <i class="fas fa-user mr-1"></i>Following</small>
+                        <h5 class="font-weight-bold mb-0 d-block"><?php echo count($result2['curso']) ?></h5><small class="text-muted"> <i class="fas fa-user mr-1"></i>Cursos</small>
                     </li>
                 </ul>
             </div>
@@ -346,12 +338,14 @@
                    <?php echo $result["data"]["descripcion"];?>
                 </div>
             </div>
+
             <div class="py-4 px-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h5 class="mb-0">Cursos recientes</h5><a href="#" class="btn btn-link text-muted">Show all</a>
+                    <h5 class="mb-0">Cursos recientes</h5><a href="#" class="btn btn-link text-muted"><!-- Show all --></a>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <div class="card-sl">
                             <div class="card-image">
                                 <img src="https://img.freepik.com/free-vector/forex-trading-background_23-2148592453.jpg" />
@@ -366,9 +360,10 @@
                             </div>
                             <a href="#" class="card-button"> Ver curso</a>
                         </div>
-                    </div>
+                    </div> -->
+
                     <?php foreach ($result2['curso'] as $par):?>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="card-sl">
                                 <div class="card-image">
                                     <img src="<?php echo $par['img']?>" />

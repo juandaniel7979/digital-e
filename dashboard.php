@@ -292,7 +292,7 @@
 
   <div class="container" >
         <div class="row">
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <div class="card-sl">
                     <div class="card-image">
                         <img src="https://img.freepik.com/free-vector/forex-trading-background_23-2148592453.jpg" />
@@ -307,26 +307,11 @@
                     </div>
                     <a href="#" class="card-button"> Ver curso</a>
                 </div>
-            </div>
-            <!-- <div class="col-md-3">
-                <div class="card-sl">
-                    <div class="card-image">
-                        <img src="https://img.freepik.com/free-vector/forex-trading-background_23-2148592453.jpg" />
-                    </div>
-                    <div class="card-heading">
-                        Curso de introduccion al Trading
-                    </div>
-                    <div class="card-text">
-                        este curso consta de 8 clases en las cuales son esplicadas por nuestros mejores instructores en la cual te daran la entrada a entender el trading.
-                    </div>
-                    <div class="card-text">
-                    </div>
-                    <a href="#" class="card-button"> Ver curso</a>
-                </div>
             </div> -->
+            
         <?php foreach ($result2['cursos'] as $par):?>
                 <div class="col-md-3">
-                    <div class="card-sl">
+                    <div class="card-sl mb-5">
                         <div class="card-image">
                             <img src="<?php echo $par['img']?>" />
                         </div>
@@ -351,33 +336,84 @@
             <center><h3 class="text">Nuestro Profesores</h3></center><br><br>
 
         <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="card profile-card-3">
                         <div class="background-block">
-                            <img src="https://media.istockphoto.com/vectors/abstract-financial-chart-with-uptrend-line-graph-in-stock-market-on-vector-id1170949872?k=20&m=1170949872&s=612x612&w=0&h=X9p_eZqfK3sCkAmFk_Oo5tcFLG3dYAoZPXeagejsCwc=" alt="profile-sample1" class="background"/>
+                            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/85/66/c0.jpg" alt="profile-sample1" class="background"/>
                         </div>
                         <div class="profile-thumb-block">
                             <img src="dashboard/img/fer.png" height="100" alt="profile-image" class="profile"/>
                         </div>
                         <div class="card-content">
-                        <h2>Fernando Gomez<small>Trader & Emprendedor Digital</small></h3>
-                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                        <h2>Fernando Gomez <small> Canal Oficial de Fernando gomez, Trader & Emprendedor Digital</small>
+                        </h2>
+                        <div class="icon-block">
+                            <a type="button" href="canal.php?id=1" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
+                        </div>
                         </div>
                     </div>
                 </div>
-            <!--  -->
-            <?php foreach ($creadores['curso'] as $par):?>
-                <div class="col-md-4">
+
+
+                <div class="col-md-4 mb-4">
                     <div class="card profile-card-3">
                         <div class="background-block">
-                            <img src="https://media.istockphoto.com/vectors/abstract-financial-chart-with-uptrend-line-graph-in-stock-market-on-vector-id1170949872?k=20&m=1170949872&s=612x612&w=0&h=X9p_eZqfK3sCkAmFk_Oo5tcFLG3dYAoZPXeagejsCwc=" alt="profile-sample1" class="background"/>
+                            <img src="https://i.pinimg.com/originals/5a/54/ec/5a54ec4543b6136d3bedb67a03a6e10b.jpg" alt="profile-sample1" class="background"/>
+                        </div>
+                        <div class="profile-thumb-block">
+                            <img src="dashboard/img/stiven.png" height="100" alt="profile-image" class="profile"/>
+                        </div>
+                        <div class="card-content">
+                        <h2>Stiven Agudelo <small> Canal Oficial de Stiven Agudelo, Trader & Emprendedor Digital</small>
+                        </h2>
+                        <div class="icon-block">
+                            <a type="button" href="canal.php?id=1" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-4">
+                    <div class="card profile-card-3">
+                        <div class="background-block">
+                            <img src="https://images2.alphacoders.com/121/thumb-1920-121132.jpg" alt="profile-sample1" class="background"/>
+                        </div>
+                        <div class="profile-thumb-block">
+                            <img src="dashboard/img/haly.png" height="100" alt="profile-image" class="profile"/>
+                        </div>
+                        <div class="card-content">
+                        <h2>Haly Rodríguez <small> Canal Oficial de Haly Rodríguez, Trader & Emprendedor Digital</small>
+                        </h2>
+                        <div class="icon-block">
+                            <a type="button" href="canal.php?id=1" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <!--  -->
+
+
+
+            <?php foreach ($creadores['curso'] as $par):?>
+                <div class="col-md-4 mb-4">
+                    <div class="card profile-card-3">
+                        <div class="background-block">
+                            <img src="<?php echo $par['creador'][0]['banner'] ?>" alt="profile-sample1" class="background"/>
                         </div>
                         <div class="profile-thumb-block">
                             <img src="<?php echo $par['creador'][0]['img']!="" ? $par['creador'][0]['img'] : 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-profile-dating-app-flaticons-lineal-color-flat-icons-3.png';  ?>" height="100" alt="profile-image" class="profile"/>
                         </div>
+
                         <div class="card-content">
                         <h2><?php echo ($par['creador'][0]['nombre'])?><small><?php echo ($par['creador'][0]['descripcion'])?></small></h3>
-                        <div class="icon"><a href="#"><i class="bx bx-home icon"></i></a><a href="canal.php?id=<?php echo $par['creador'][0]['_id']?>"> <i class="bx bx-home"></i></a><a href="#"> <i class="bx bx-home"></i></a></div>
+
+                            <div class="icon mt-2 mb-2">
+
+                                <a type="button" href="canal.php?id=<?php echo $par['creador'][0]['_id']?>" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
+                            </div>
                         </div>
                     </div>
                 </div>
