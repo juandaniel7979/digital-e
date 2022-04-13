@@ -259,20 +259,20 @@
 <footer class="footer-bs">
   <div class="row"  data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
     <div class="col-md-3 footer-brand animated fadeInLeft">
-        <center><img src="img/SIMPLE-KEY-SOLUTIONS-LOGO.png" width="150" alt=""></center>
+        <center><img src="logo/azulconnombre.png" width="150" alt=""></center>
           <p>Aenean eu nisi a ligula auctor congue. Integer non nibh tempus, 
             fringilla ante posuere, facilisis nisl. Duis dapibus pellentesque nibh in ornare. 
             Ut vel aliquet ligula. Proin commodo ullamcorper quam, vel fringilla dolor ullamcorper at.
              Sed quis pulvinar ligula. Nullam vitae rutrum lectus, et mattis lacus. Vestibulum cursus 
              nec metus eget vulputate.</p>
-          <p>© 2021 Simple Key Solutions SAS, All rights reserved</p>
+          <p>© 2022 Digital Entrepreneurs S.A.S, All rights reserved</p>
       </div>
     <div class="col-md-3 footer-nav animated fadeInUp">
         <h4>Menu —</h4>
         <div class="col-md-6">
               <ul class="pages">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Features</a></li>
+                  <li><a href="dashboard/legal/TERMINOSYCONDICIONES.pdf">Terminos y condiciones</a></li>
+                  <li><a href="dashboard/legal/HABEASDATA.pdf">habeas data</a></li>
                   <li><a href="#">Pricing</a></li>
                   <li><a href="#">About us</a></li>
                   <li><a href="#">Services</a></li>

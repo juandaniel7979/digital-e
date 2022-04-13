@@ -65,13 +65,13 @@
             <div class="col-md-4">
                 <div class="card profile-card-3">
                     <div class="background-block">
-                        <img src="https://media.istockphoto.com/vectors/abstract-financial-chart-with-uptrend-line-graph-in-stock-market-on-vector-id1170949872?k=20&m=1170949872&s=612x612&w=0&h=X9p_eZqfK3sCkAmFk_Oo5tcFLG3dYAoZPXeagejsCwc=" alt="profile-sample1" class="background"/>
+                        <img src="https://wallpaperaccess.com/full/1267572.jpg" alt="profile-sample1" class="background"/>
                     </div>
                     <div class="profile-thumb-block">
-                        <img src="dashboard/img/fer.png" height="100" alt="profile-image" class="profile"/>
+                        <img src="dashboard/img/stiven.png" height="100" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                    <h2>Fernando Gomez<small>Trader & Emprendedor Digital</small></h3>
+                    <h2>Stiven Agudelo<small>Trader & Emprendedor Digital</small></h3>
                     <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
                     </div>
                 </div>
@@ -81,13 +81,13 @@
             <div class="col-md-4">
                 <div class="card profile-card-3">
                     <div class="background-block">
-                        <img src="https://media.istockphoto.com/vectors/abstract-financial-chart-with-uptrend-line-graph-in-stock-market-on-vector-id1170949872?k=20&m=1170949872&s=612x612&w=0&h=X9p_eZqfK3sCkAmFk_Oo5tcFLG3dYAoZPXeagejsCwc=" alt="profile-sample1" class="background"/>
+                        <img src="https://i.ytimg.com/vi/uj8NHK0pFMs/maxresdefault.jpg" alt="profile-sample1" class="background"/>
                     </div>
                     <div class="profile-thumb-block">
-                        <img src="dashboard/img/fer.png" height="100" alt="profile-image" class="profile"/>
+                        <img src="dashboard/img/haly.png" height="100" alt="profile-image" class="profile"/>
                     </div>
                     <div class="card-content">
-                    <h2>Fernando Gomez<small>Trader & Emprendedor Digital</small></h3>
+                    <h2>Haly Rodríguez<small>Trader & Emprendedor Digital</small></h3>
                     <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
             <div class="col-md-4">
                 <div class="card profile-card-3">
                     <div class="background-block">
-                        <img src="https://media.istockphoto.com/vectors/abstract-financial-chart-with-uptrend-line-graph-in-stock-market-on-vector-id1170949872?k=20&m=1170949872&s=612x612&w=0&h=X9p_eZqfK3sCkAmFk_Oo5tcFLG3dYAoZPXeagejsCwc=" alt="profile-sample1" class="background"/>
+                        <img src="https://wallpaperaccess.com/full/1267563.jpg" alt="profile-sample1" class="background"/>
                     </div>
                     <div class="profile-thumb-block">
                         <img src="dashboard/img/fer.png" height="100" alt="profile-image" class="profile"/>
