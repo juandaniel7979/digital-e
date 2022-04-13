@@ -65,8 +65,8 @@
   </div>
   
 
-<br><br><br>
 <section id="aboutus" class="container">
+  <br><br><br><br>
   <div class="feat bg-gray pt-5 pb-5">
     <div class="container">
       <div class="row">
@@ -82,6 +82,7 @@
 
 
 <section id="MISION" class="container">
+  <br><br><br><br>
   <div class="feat bg-gray pt-5 pb-5">
     <div class="container">
       <div class="row">
@@ -98,6 +99,7 @@
 
 
 <section id="VISION" class="container">
+  <br><br><br><br>
   <div class="feat bg-gray pt-5 pb-5">
     <div class="container">
       <div class="row">
@@ -113,6 +115,7 @@
 
 
 <section id="FUNDADOR" class="container">
+  <br><br><br><br>
   <div class="feat bg-gray pt-5 pb-5">
     <div class="container">
       <div class="row">
@@ -129,56 +132,6 @@
 
   
 
-
-<br><br><br><br>
-<section id="FUNDADOR" class="container">
-  <div class="feat bg-gray pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="section-head col-sm-12" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
-          <h4><span>FUNDADOR</span></h4>
-          <p>Para nuestra plataforma DIGITAL ENTREPRENEURS S.A.S, es un honor informarles a nuestros clientes que somos guiados por un excelente Empresario, y emprendedor el señor FERNANDO GÓMEZ, quien con su larga trayectoria en el mercado bursátil nos demuestra que con empeño, dedicación y disciplina todos nuestros sueños se convierten en realidad.</p>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="350" data-aos-delay="350">
-          <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
-            <h6>digital marketing</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="400" data-aos-delay="400">
-          <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-code"></i></span>
-            <h6>Software development</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="450" data-aos-delay="450">
-          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-hourglass-half"></i></span>
-            <h6>CRM</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
-          <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
-            <h6>Inbound Marketing</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="550" data-aos-delay="550">
-          <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-store"></i></span>
-            <h6>E-Business</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
-          <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-suitcase"></i></span>
-            <h6>Business Process Outsourcing</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
