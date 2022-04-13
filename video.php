@@ -59,11 +59,12 @@
     <section class="home">
         <div class="text">inicio</div>
 
-            <br><br>
-
-            <center><h3 class="text">Cursos recientes</h3></center>
-
         <style type="text/css">
+            iframe{
+                margin-left: 2%;
+                height: 70vh;
+                width: calc(100vw - (100vw/3));
+            }
                 a {
                     text-decoration: none;
                 }
@@ -257,16 +258,36 @@
                 }
         </style>     
 
-
-  <div class="container" >
         <div class="row">
-            <h1>Hola que hace</h1>
-            <div class="wrapper-video">
-                <!-- <video src="<?php echo $video['video_url']?>"></video> -->
-                <video src="https://www.youtube.com/watch?v=VpLXxFhy7s4"></video>
+            <div class="col">
+            <iframe  src="https://www.youtube.com/embed/DYDQUaw2f6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>  
+            <div class="col col-lg-3 bg-light">
+                <ul class="nav nav-pills flex-column mb-auto">
+                <?php foreach ($videos['video'] as $par):?>
 
+                    <?php if($par['_id'] == $_GET['id_video']){?>
+                        <li class="nav-item p-2 bg-light">
+                            <a class="nav-link active" href=""><?php echo $par['titulo'];?></a>
+                        </li>
+                   <?php }else{?>
+                        <li class="nav-item p-2 bg-light">
+                            <a href="#" class="nav-link" aria-current="page">
+                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                             <?php echo $par['titulo'];?>
+                            </a>
+                        </li>
+                        
+                   <?php }?> 
+
+                <?php endforeach?>
+                </ul>
+            </div>
+        </div>
+
+
+                <!-- <video src="<?php echo $video['video_url']?>"></video> -->
+                <!-- <video src="https://youtu.be/DYDQUaw2f6c"></video> -->
 
     </section>
 
