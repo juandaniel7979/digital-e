@@ -90,9 +90,9 @@
 
 
     <section class="home">
-        <div class="text">inicio</div>
+        <div class="text">Bienvenido <?php echo $result['data']['nombre'] ?></div>
 
-            <br><br>
+            <br>
 
             <center><h3 class="text">Cursos recientes</h3></center>
 
@@ -335,7 +335,6 @@
 
 
 <br><br>
-
             <center><h3 class="text">Nuestro Profesores</h3></center><br><br>
 
         <div class="row">
@@ -351,7 +350,7 @@
                         <h2>Fernando Gomez <small> Canal Oficial de Fernando gomez, Trader & Emprendedor Digital</small>
                         </h2>
                         <div class="icon-block">
-                            <a type="button" href="canal.php?id=1" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
+                            <a type="button" href="canal.php?id=62574165ccdb404f65509809" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
                         </div>
                         </div>
                     </div>
@@ -370,7 +369,7 @@
                         <h2>Stiven Agudelo <small> Canal Oficial de Stiven Agudelo, Trader & Emprendedor Digital</small>
                         </h2>
                         <div class="icon-block">
-                            <a type="button" href="canal.php?id=1" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
+                            <a type="button" href="canal.php?id=62574fddccdb404f65509927" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
                         </div>
                         </div>
                     </div>
@@ -389,7 +388,7 @@
                         <h2>Haly Rodríguez <small> Canal Oficial de Haly Rodríguez, Trader & Emprendedor Digital</small>
                         </h2>
                         <div class="icon-block">
-                            <a type="button" href="canal.php?id=1" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
+                            <a type="button" href="canal.php?id=62575072ccdb404f6550993c" class="btn btn-primary" style="border-radius: 25px;">Ver Canal</a>
                         </div>
                         </div>
                     </div>
