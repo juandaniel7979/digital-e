@@ -23,7 +23,8 @@
 
     
     $url2 = $api_url."api/canal/ultimos";
-    $result2 = toServer($url2,"GET",'',$_SESSION['token']);
+    $data = array("limit" =>8);
+    $result2 = toServer($url2,"GET",$data,$_SESSION['token']);
     //print_r($result2);
 
     $url = $api_url."api/canal/stream";
@@ -313,7 +314,9 @@
                 <div class="col-md-3">
                     <div class="card-sl mb-5">
                         <div class="card-image">
-                            <img src="<?php echo $par['img']?>" />
+                            <a href="curso.php?id=<?php echo $par['_id']?>">
+                                <img src="<?php echo $par['img']?>" />
+                            </a>
                         </div>
                         <div class="card-heading">
                         <?php echo $par['nombre']?>
@@ -323,7 +326,7 @@
                         </div>
                         <div class="card-text">
                         </div>
-                        <a href="#" class="card-button"> Ver curso</a>
+                        <a href="curso.php?id=<?php echo $par['_id']?>" class="card-button"> Ver curso</a>
                     </div>
                 </div>
         <?php endforeach?>
