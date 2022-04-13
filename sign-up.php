@@ -6,7 +6,7 @@ $loginmessage = "";
 
 session_start();
 if (isset($_SESSION['token'])) {
-  header('Location: dashboard2.php');
+  header('Location: dashboard.php');
   exit;
 }
 
@@ -28,7 +28,7 @@ if(isset($_POST["signup"])){
     $_SESSION["token"] = $result["token"];
     // print_r($result3);
     // echo "<script>alert('Bienvenido ".$_SESSION["nombre"]."')</script>";
-    header('Location: index.php');
+    header('Location: login.php');
     exit;
   }
 }

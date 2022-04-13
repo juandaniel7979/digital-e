@@ -34,30 +34,20 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre nosotros</a>
-          </li>
+          
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">Nuestros Cursos</a>
+              aria-expanded="false">Nosotros</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">service 1</a>
-              <a class="dropdown-item" href="#">service 2</a>
-              <a class="dropdown-item" href="#">service 3</a>
+              <a class="dropdown-item" href="#MISION">Mision</a>
+              <a class="dropdown-item" href="#VISION">Vision</a>
+              <!-- <a class="dropdown-item" href="#FUNDADOR">Fundador</a> -->
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">service 4</a>
+              <a class="dropdown-item" href="#FUNDADOR">Fundador</a>
             </div>
           </li>
 
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Mision</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vision</a>
-          </li>
 
           
         </ul>
@@ -75,130 +65,79 @@
   </div>
   
 
-
-  <section id="aboutus" class="d-none d-lg-block">
-    <br><br>
-    <div class="container about-us">
-      <div class="row container">
-        <img src="img/key.png" width="40px"  style="transform: rotate(20deg);position: absolute;
-          right:9%;"
-          data-aos="fade-up" alt="">
-        <div class="col-sm about-content"  data-aos="fade-right">
-
-          
-          <h2><b>About Us</b></h2>
-          <img src="img/blue.png" width="30px"  style="transform: rotate(64deg);position: absolute;
-          left:10%; z-index: -1;"
-          data-aos="fade-up" data-aos-duration="350" data-aos-delay="350" alt="">
-          <img src="img/purple.png" width="20px"  style="transform: rotate(40deg);position: absolute;
-          right:10%;"
-          data-aos="fade-up" data-aos-duration="300" data-aos-delay="300" alt="">
-        </div>
-        <div class="col-sm glass"   data-aos="fade-left" >
-          
-          <p>Quisque eu sem orci. Aenean ac arcu in magna convallis consequat. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit nulla, 
-            faucibus in molestie eget, scelerisque id est. Phasellus pretium urna in metus malesuada, 
-            non scelerisque risus mollis. Vivamus sagittis tortor at libero bibendum pretium. 
-            Donec arcu risus, tincidunt et lectus faucibus, eleifend pellentesque neque. 
-            Aliquam scelerisque nibh nec justo euismod, vel dictum mauris ultricies. 
-            In molestie eros eu nisi cursus bibendum. Nullam ac magna dolor.</p>
-
-        </div>
-      </div>
-    </div>
-
-
-
-    
-  </section>
-
-
-  <section id="aboutus" class="d-none d-lg-block">
-    <br><br><br>
-    <div class="container about-us">
-      <div class="row">
-        <img src="img/key.png" width="40px"  style="transform: rotate(20deg);position: absolute;
-          left:6%;"
-          data-aos="fade-up" alt="">
-
-          <div class="col-sm glass"   data-aos="fade-left" >
-          
-            <p>Quisque eu sem orci. Aenean ac arcu in magna convallis consequat. 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit nulla, 
-              faucibus in molestie eget, scelerisque id est. Phasellus pretium urna in metus malesuada, 
-              non scelerisque risus mollis. Vivamus sagittis tortor at libero bibendum pretium. 
-              Donec arcu risus, tincidunt et lectus faucibus, eleifend pellentesque neque. 
-              Aliquam scelerisque nibh nec justo euismod, vel dictum mauris ultricies. 
-              In molestie eros eu nisi cursus bibendum. Nullam ac magna dolor.</p>
-  
-          </div>
-
-        <div class="col-sm about-content"  data-aos="fade-right">
-
-          
-          <h2><b>Our Team</b></h2>
-          <img src="img/purple.png" width="20px"  style="transform: rotate(90deg);position: absolute;
-          left:10%;"
-          data-aos="fade-up" data-aos-duration="300" data-aos-delay="300" alt="">
-          <img src="img/blue.png" width="30px"  style="transform: rotate(45deg);position: absolute;
-          right:10%; z-index: -1;"
-          data-aos="fade-up" data-aos-duration="350" data-aos-delay="350" alt="">
-          
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  
-
-    <section id="Newsletter" class="container d-none d-lg-block">
-    <br><br><br>
-    <div class="container about-us">
-      <div class="row">
-        <img src="img/key.png" width="40px"  style="transform: rotate(20deg);position: absolute;
-          left:6%;"
-          data-aos="fade-up" alt="">
-
-          <div class="col-sm glass"   data-aos="fade-left" >
-          
-            <center>
-                <h3>Newsletter</h3><br>
-                <div class="row">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Name</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
-  
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">ingrese su email para subscribirse</small>
-                    </div>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-primary btn-lg">Enviar</button>
-            </center>
-
-          </div>
-        
-      </div>
-    </div>
-  </section>
-
-
-
-<br><br><br><br>
-<section id="services" class="container">
+<br><br><br>
+<section id="aboutus" class="container">
   <div class="feat bg-gray pt-5 pb-5">
     <div class="container">
       <div class="row">
         <div class="section-head col-sm-12" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
-          <h4><span>Why Choose</span> Us?</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a laoreet metus.<br> Donec accumsan mi vitae tortor condimentum consectetur. In fringilla tempus gravida. Mauris gravida vitae erat in egestas</p>
+          <h4><span>Sobre Nosotros</span></h4>
+          <p>Para nuestra plataforma DIGITAL ENTREPRENEURS S.A.S, es un honor informarles a nuestros clientes que somos guiados por un excelente Empresario, y emprendedor el señor FERNANDO GÓMEZ, quien con su larga trayectoria en el mercado bursátil nos demuestra que con empeño, dedicación y disciplina todos nuestros sueños se convierten en realidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="MISION" class="container">
+  <div class="feat bg-gray pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+          <h4><span>MISION</span></h4>
+          <p>En DIGITAL ENTREPRENEURS S.A.S, queremos brindarte opciones acordes a la actualidad para tu crecimiento personal y financiero desde las bases de nuestro equipo humano calificado para dicha labor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="VISION" class="container">
+  <div class="feat bg-gray pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+          <h4><span>VISION</span></h4>
+          <p>Nuestra visión en DIGITAL ENTREPRENEURS S.A.S, es generar cimientos para todos nuestros clientes frente al mercado bursátil, en base a la experiencia de nuestro equipo de profesionales.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="FUNDADOR" class="container">
+  <div class="feat bg-gray pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+          <h4><span>FUNDADOR</span></h4>
+          <p>Para nuestra plataforma DIGITAL ENTREPRENEURS S.A.S, es un honor informarles a nuestros clientes que somos guiados por un excelente Empresario, y emprendedor el señor FERNANDO GÓMEZ, quien con su larga trayectoria en el mercado bursátil nos demuestra que con empeño, dedicación y disciplina todos nuestros sueños se convierten en realidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+<br><br><br><br>
+<section id="FUNDADOR" class="container">
+  <div class="feat bg-gray pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+          <h4><span>FUNDADOR</span></h4>
+          <p>Para nuestra plataforma DIGITAL ENTREPRENEURS S.A.S, es un honor informarles a nuestros clientes que somos guiados por un excelente Empresario, y emprendedor el señor FERNANDO GÓMEZ, quien con su larga trayectoria en el mercado bursátil nos demuestra que con empeño, dedicación y disciplina todos nuestros sueños se convierten en realidad.</p>
         </div>
         <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="350" data-aos-delay="350">
           <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
