@@ -7,10 +7,15 @@
       exit;
     }
 
+    $_id = $_GET['id'];
 
 
     $url = $api_url."api/profile/user";
     $result = toServer($url,"GET",'',$_SESSION['token']);
+    
+    // $url = $api_url."api/profile/user";
+    // $data = array("id" => $_id);
+    // $result = toServer($url,"POST",$data,$_SESSION['token']);
     
 
     $url = $api_url."api/pay/calDias";
@@ -22,8 +27,10 @@
     }
 
     
-    $url2 = $api_url."api/canal/ultimos";
-    $result2 = toServer($url2,"GET",'',$_SESSION['token']);
+    // $url2 = $api_url."api/canal/ultimos";
+    $url2 = $api_url."api/canal/curso";
+    $data2 = array("id" => $_id);
+    $result2 = toServer($url2,"GET",$data2, $_SESSION['token']);
     //print_r($result2);
 
     $url = $api_url."api/canal/stream";
@@ -344,10 +351,44 @@
                     <h5 class="mb-0">Cursos recientes</h5><a href="#" class="btn btn-link text-muted">Show all</a>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 mb-2 pr-lg-1"><img src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-md-3">
+                        <div class="card-sl">
+                            <div class="card-image">
+                                <img src="https://img.freepik.com/free-vector/forex-trading-background_23-2148592453.jpg" />
+                            </div>
+                            <div class="card-heading">
+                                Curso de introduccion al Trading
+                            </div>
+                            <div class="card-text">
+                                este curso consta de 8 clases en las cuales te daran la entrada a entender el trading.
+                            </div>
+                            <div class="card-text">
+                            </div>
+                            <a href="#" class="card-button"> Ver curso</a>
+                        </div>
+                    </div>
+                    <?php foreach ($result2['curso'] as $par):?>
+                        <div class="col-md-3">
+                            <div class="card-sl">
+                                <div class="card-image">
+                                    <img src="<?php echo $par['img']?>" />
+                                </div>
+                                <div class="card-heading">
+                                <?php echo $par['nombre']?>
+                                </div>
+                                <div class="card-text">
+                                    <?php echo $par['descripcion']?>
+                                </div>
+                                <div class="card-text">
+                                </div>
+                                <a href="#" class="card-button"> Ver curso</a>
+                            </div>
+                        </div>
+                    <?php endforeach?>
+                    <!-- <div class="col-lg-6 mb-2 pr-lg-1"><img src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
                     <div class="col-lg-6 mb-2 pl-lg-1"><img src="https://images.unsplash.com/photo-1493571716545-b559a19edd14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
                     <div class="col-lg-6 pr-lg-1 mb-2"><img src="https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
-                    <div class="col-lg-6 pl-lg-1"><img src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
+                    <div class="col-lg-6 pl-lg-1"><img src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div> -->
                 </div>
             </div>
         </div>
