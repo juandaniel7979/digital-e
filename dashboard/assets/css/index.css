@@ -1,0 +1,38 @@
+body{
+    background: url(../img/papyrus.png) !important;
+}
+.aside-banner img{
+    width: 100%;
+    /* cover */
+    height: 90vh;
+    position: relative;
+    left: -15px;
+}
+
+.box{
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px rgba(56,56,56,1);
+}
+
+
+/* aside-login centrar */
+
+
+
+.aside-login{
+    position: relative;
+    right: -25px;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+.aside-login form{
+    margin-top: 50px;
+}
+
+.aside-login form input{
+    border-radius: 25px;
+}
+
