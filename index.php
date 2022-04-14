@@ -163,7 +163,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="dashboard/js/simpleksolutions.js"></script>
   <br><br><br>
-  <a href="https://api.whatsapp.com/send?phone=+573148452243&text=hola!"><img src="https://img.icons8.com/fluent/150/000000/whatsapp.png" width="70px" style="position: fixed; bottom: 2%; right: 2%;" /></a>
+  <a href="https://api.whatsapp.com/send?phone=+573016274847&text=hola!"><img src="https://img.icons8.com/fluent/150/000000/whatsapp.png" width="70px" style="position: fixed; bottom: 2%; right: 2%;" /></a>
 </body>
 
 
