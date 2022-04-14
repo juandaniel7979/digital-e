@@ -36,22 +36,37 @@
           </li>
           
 
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
               aria-expanded="false">Nosotros</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#MISION">Mision</a>
               <a class="dropdown-item" href="#VISION">Vision</a>
-              <!-- <a class="dropdown-item" href="#FUNDADOR">Fundador</a> -->
+              <a class="dropdown-item" href="#FUNDADOR">Fundador</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#FUNDADOR">Fundador</a>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#">PQRS
+            <a class="nav-link" href="#MISION">Mision
               <!-- <span class="sr-only">(current)</span> -->
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#VISION">Vision
+              <!-- <span class="sr-only">(current)</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#FUNDADOR">Fundador
+              <!-- <span class="sr-only">(current)</span> -->
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">PQRS
+              <span class="sr-only">(current)</span>
+            </a>
+          </li> -->
 
 
           
