@@ -262,6 +262,7 @@
             <div class="col">
             <!-- <iframe  src="https://www.youtube.com/embed/DYDQUaw2f6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             <video id="video" src="<?php echo $video['video_url']?>"></video>
+            <!-- <video id="video" src="./videos/2022-02-04 12-02-58.mkv"></video> -->
            
             </div>
             <div class="col col-lg-3 bg-light">

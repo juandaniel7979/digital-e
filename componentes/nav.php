@@ -40,9 +40,9 @@
                 </li>
 
                 <li class="<?php if($active==4){echo "mode";} ?>">
-                    <a href="#">
+                    <a href="mailto:Digitalentrepreneurst@gmail.com?Subject=PQRS%20DigitalEnterpreneurst">
                         <i class='bx bx-envelope icon' ></i>
-                        <span class="text nav-text">Contáctenos</span>
+                        <span class="text nav-text">PQRS</span>
                     </a>
                 </li>
 

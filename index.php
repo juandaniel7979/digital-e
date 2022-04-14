@@ -21,7 +21,7 @@
       alt="simpleksolutions header">
     <!--/////////////////////////////////////////| Navbar |//////////////////////////////////////////////-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary header-nav">
-      <a class="navbar-brand" href="#">Digital Entrepreneurs</a>
+      <!-- <a class="navbar-brand" href="#">Digital Entrepreneurs</a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
         aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,6 +47,11 @@
               <a class="dropdown-item" href="#FUNDADOR">Fundador</a>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PQRS
+              <!-- <span class="sr-only">(current)</span> -->
+            </a>
+          </li>
 
 
           
@@ -59,7 +64,7 @@
     </nav>
     <!--/////////////////////////////////////////| End Navbar |//////////////////////////////////////////////-->
     <br><br><br><br><br>
-    <h3>Digital Entrepreurs</h3>
+    <h3>DIGITAL ENTREPRENEURS</h3>
     <br><br>
     <center><a href="sign-up.php"><button type="button" class="btn btn-primary btn-lg header-btn" style="padding: 20px; padding-left: 20px; padding-right: 20px;">¡Inscribiete ahora!</button></a></center>
   </div>
@@ -182,9 +187,9 @@
     <div class="col-md-3 footer-social animated fadeInDown">
         <h4>Follow Us</h4>
         <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100005475677173">Facebook</a></li>
+            <!-- <li><a href="#">Twitter</a></li> -->
+            <li><a href="https://instagram.com/fergomez_official?igshid=YmMyMTA2M2Y=">Instagram</a></li>
             
           </ul><br>
           <h4>Email</h4>
@@ -196,17 +201,21 @@
             </ul>
       </div>
     <div class="col-md-3 footer-ns animated fadeInRight">
-        <h4>Newsletter</h4>
-          <p>subscribe to Newsletter</p>
-          <p>
+        <h4>PQRS</h4>
+        <ul>
+          <li><a href="mailto:Digitalentrepreneurst@gmail.com?Subject=PQRS%20DigitalEnterpreneurst">PQRS</a> </li>
+        </ul>
+        
+           <!-- <a>D</a> -->
+          <!--<p>
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search for...">
                 <span class="input-group-btn">
                   <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
                 </span>
-              </div><!-- /input-group -->
-           </p>
-      </div>
+              </div> 
+          </p> -->
+    </div>
      
   </div>
   
